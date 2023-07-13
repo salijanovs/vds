@@ -1,0 +1,120 @@
+.selection {
+  display: block;
+  margin-bottom: 31px;
+}
+
+.selection-wrapper {
+  width: 100%;
+  padding-left: 80px;
+  background: url(./../imgs/selection/bg.png) no-repeat;
+  padding: 40px 0 40px 80px;
+  position: relative;
+}
+.selection-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 247px;
+  right: 10px;
+  width: 200px;
+  height: 200px;
+  background: url(./../imgs/selection/face.png);
+  transition: filter 0.3s ease-in;
+}
+.selection-wrapper:hover::before {
+  filter: contrast(1.2);
+}
+.selection-title {
+  color: #fe9e45;
+  font-weight: 600;
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+.selection-text {
+  color: #fff;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 140%;
+  margin-bottom: 50px;
+}
+.selection-items {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  background: url(./../imgs/selection/Vector.png) no-repeat;
+}
+.selection-item_2 {
+  margin-left: 350px;
+}
+.selection-item_3 {
+  margin-left: -30px;
+}
+.selection-item_4 {
+  margin-left: 650px;
+}
+.selection-item_5 {
+  margin-left: 80px;
+}
+.selection-item_6 {
+  margin-left: 700px;
+}
+/* Responce */
+@media screen and (max-width: 1270px) {
+  .selection-wrapper::before {
+    display: none;
+  }
+  .selection-item_4 {
+    margin-left: 400px;
+  }
+  .selection-item_6 {
+    margin-left: 450px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .selection-item_4 {
+    margin-left: 300px;
+  }
+  .selection-item_6 {
+    margin-left: 350px;
+  }
+  .selection-item_2 {
+    margin-left: 250px;
+  }
+  .selection-item_3 {
+    margin-left: 70px;
+  }
+}
+@media screen and (max-width: 873px) {
+  .selection-items {
+    align-items: center;
+    gap: 40px;
+    background: none;
+  }
+  .selection-item {
+    margin: 0;
+  }
+  .selection-wrapper {
+    text-align: center;
+    padding: 40px 10px 80px;
+  }
+  .selection-title {
+    font-size: 35px;
+  }
+  .selection-text {
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 535px) {
+  .selection-items {
+    gap: 30px;
+  }
+  .selection-wrapper {
+    padding: 20px 5px 40px;
+  }
+  .selection-title {
+    font-size: 30px;
+  }
+  .selection-text {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+}

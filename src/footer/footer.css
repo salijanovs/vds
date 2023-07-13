@@ -1,0 +1,23 @@
+.footer {
+  background: #262d36;
+  padding: 20px 0;
+}
+.footer-wrapper {
+  display: flex;
+  column-gap: 30px;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-text {
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+}
+@media screen and (max-width : 793px) {
+  .footer-wrapper{
+    justify-content: center;
+    text-align: center;
+    row-gap: 10px;
+  }
+}

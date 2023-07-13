@@ -1,0 +1,32 @@
+.advantages-item {
+  width: 100%;
+  font-family: Roboto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.advantages-item_title {
+  color: #481c03;
+  font-weight: 700;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.advantages-item_text {
+  color: #535353;
+  font-weight: 400;
+  font-size: 20px;
+}
+.advantages-item_img {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 520px) {
+  .advantages-item_title {
+    font-size: 28px;
+  }
+  .advantages-item_text {
+    font-size: 18px;
+  }
+}

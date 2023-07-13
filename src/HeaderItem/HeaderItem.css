@@ -1,0 +1,16 @@
+.header-item {
+  max-width: 212px;
+  text-align: center;
+}
+.header-item_img{
+  transition: filter 0.3s ease-in;
+}
+.header-item:hover .header-item_img {
+  filter: invert(13%);
+}
+
+.header-item_title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+}
